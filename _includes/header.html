@@ -1,5 +1,17 @@
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 <header>
+  <div class="font-effect-anaglyph">
+    sh1r4s3@blog {{page.url}}% ./show_motd
+  </div>
+
+  <div class="font-effect-anaglyph">
+    <div class="slow">Hi there, netlander...</div>
+    <br>
+    <div class="motd">
+      sh1r4s3@blog {{page.url}}% <div class="blink">_</div>
+    </div>
+  </div>
+  <br>
   <div class="menu">
     <ul>
       {%- for path in page_paths -%}
